@@ -1,0 +1,31 @@
+@import url(https://db.onlinewebfonts.com/c/ca671f001f1c1ac07ba12ef439e7e65a?family=Simplon+Norm);
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --text-primary: #252020;
+  --text-muted: #888792;
+
+  --icon-primary: #292D32;
+}
+
+
+body {
+  font-family: "Simplon Norm";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+

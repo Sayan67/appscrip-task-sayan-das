@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/layout/header/Navbar";
 
 export const metadata: Metadata = {
   title: "LOGO",
@@ -16,7 +17,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logos/favicon.png" sizes="any" />
       </head>
-      <body className={``}>{children}</body>
+      <body className={``}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

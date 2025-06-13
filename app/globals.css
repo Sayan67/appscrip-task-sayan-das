@@ -5,16 +5,20 @@
   --foreground: #171717;
   --text-primary: #252020;
   --text-muted: #888792;
-
-  --icon-primary: #292D32;
+  --border-gray: #e5e5e5;
+  --icon-primary: #292d32;
+  --brick-red: #eb4c6b;
 }
-
 
 body {
   font-family: "Simplon Norm";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 * {
@@ -27,5 +31,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-

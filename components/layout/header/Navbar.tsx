@@ -13,6 +13,7 @@ import {
   SearchNormal1,
   ShoppingBag,
 } from "iconsax-reactjs";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,13 +59,15 @@ export default function Navbar() {
             >
               <HamburgerMenu size="24" className={styles.icon} />
             </button>
-            <Image
-              src="/logos/Logo.svg"
-              alt="Brand Logo"
-              className={`${styles.icon} ${styles.brandLogo}`}
-              width={36}
-              height={36}
-            />
+            <Link href={'/'}>
+              <Image
+                src="/logos/Logo.svg"
+                alt="Brand Logo"
+                className={`${styles.icon} ${styles.brandLogo}`}
+                width={36}
+                height={36}
+              />
+            </Link>
           </div>
 
           <div className={`${styles.logo} ${inter.className}`}>LOGO</div>

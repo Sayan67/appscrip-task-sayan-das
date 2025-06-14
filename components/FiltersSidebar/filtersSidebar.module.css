@@ -1,0 +1,54 @@
+.sidebar {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.filterSection {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.customisableLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+.dropdown {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.unselect {
+  color: #9ca3af;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.subText {
+  color: #666;
+  margin-top: 0.3rem;
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/layout/header/Navbar";
+import Footer from "@/components/layout/footer/Footer";
+import { Provider } from "jotai";
 
 export const metadata: Metadata = {
   title: "LOGO",
@@ -18,8 +20,11 @@ export default function RootLayout({
         <link rel="icon" href="/logos/favicon.png" sizes="any" />
       </head>
       <body className={``}>
-        <Navbar />
-        {children}
+        <Provider>
+          <Navbar />
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );

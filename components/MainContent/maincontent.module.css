@@ -1,0 +1,14 @@
+.productsContainer {
+  padding-top: 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .productsContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

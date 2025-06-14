@@ -6,3 +6,11 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 480px) {
+  .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}

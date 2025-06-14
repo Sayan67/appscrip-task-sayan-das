@@ -37,28 +37,12 @@ function ProductCard({
       <div className={styles.productDetails}>
         <div className={styles.productInfo}>
           <h3 className={styles.productTitle}>{products.title}</h3>
-          <p
-            style={{
-              color: "var(--text-muted)",
-              display: "flex",
-              alignItems: "center",
-              gap: "0.1rem",
-              textWrap: "nowrap",
-            }}
+          <div
             className={styles.productPrice}
           >
-            <span
-              style={{
-                fontWeight: "bold",
-                fontSize: "14px",
-                textDecoration: "underline",
-                cursor: "pointer",
-              }}
-            >
-              Sign in
-            </span>
+            <span className={styles.signIn}>Sign in</span>
             or Create an account to see pricing
-          </p>
+          </div>
         </div>
         <Heart
           onClick={onFavouriteToggle}

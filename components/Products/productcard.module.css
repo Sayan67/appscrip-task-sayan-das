@@ -1,9 +1,9 @@
 .cardContainer {
-  width: 290px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   overflow: hidden;
   background-color: #fff;
   cursor: pointer;

@@ -13,13 +13,19 @@
   background-color: white
 }
 
+@media screen and (max-width: 768px) {
+  .filtersbarContainer {
+    padding: 10px;
+  }
+  
+}
+
 .filterLeftContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 70px;
-  min-width: 150px;
 }
 .filterLeftContainer h3{
   display: none;
@@ -36,6 +42,7 @@
 }
 
 .sortingContainer {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -97,6 +104,24 @@
 @media screen and (min-width: 768px) {
   .divider {
     display: none;
+  }
+  
+}
+.sortingButton{
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .sortingButton {
+    font-size: 14px;
+    padding: 0.5rem;
   }
   
 }

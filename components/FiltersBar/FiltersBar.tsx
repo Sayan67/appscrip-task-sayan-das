@@ -54,15 +54,7 @@ function FiltersBar() {
               sorting: { ...filters.sorting, open: !filters.sorting.open },
             })
           }
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "0.5rem",
-            cursor: "pointer",
-            padding: "1rem 1rem",
-            fontWeight: "700",
-            fontSize: "18px",
-          }}
+          className={styles.sortingButton}
         >
           {filters.sorting.name}
           <span className={styles.sortingArrow}>
